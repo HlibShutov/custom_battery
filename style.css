@@ -1,0 +1,30 @@
+#custom-battery.performance {
+    color: #f53c3c;
+}
+
+#custom-battery.balanced {
+    color: #2980b9;
+}
+
+#custom-battery.power-saver {
+    color: #2ecc71;
+}
+
+#custom-battery.charging, #battery.plugged {
+    background-color: green;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+    }
+}
+
+#custom-battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

@@ -1,0 +1,11 @@
+{
+    "custom/battery": {
+        "exec": "~/.config/waybar/scripts/battery.sh",
+	"restart-interval": 1,
+	"format": "  {} {icon}  ",
+	"return-type": "json",
+        "format-icons": ["", "", "", "", ""],
+	"on-click": "~/.config/waybar/scripts/change_power_profile.sh"
+
+    }
+}
