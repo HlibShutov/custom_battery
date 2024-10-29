@@ -20,7 +20,7 @@
     }
 }
 
-#custom-battery.critical:not(.charging) {
+#custom-battery.critical {
     background-color: #f53c3c;
     animation-name: blink;
     animation-duration: 0.5s;
